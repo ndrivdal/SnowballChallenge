@@ -7,13 +7,16 @@
 }
 
 /* Links inside the navbar */
-.navbar a {
-    float: left;
+.navbar a{
+    float: none;
     font-size: 16px;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 /* Highlight current website */
