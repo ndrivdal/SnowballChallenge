@@ -2,86 +2,52 @@ body {
     margin: 0px;
 }
 
-/* Navbar container */
 .navbar {
-    overflow: hidden;
+    position: relative;
     background-color: #333333;
-    font-family: Helvetica, serif;
-    margin: -8px;
+    overflow: hidden;
 }
 
-/* Links inside the navbar */
-.navbar a{
-    float: none;
-    font-size: 16px;
-    color: white;
+.navbar a {
+    float: left;
+    color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    font-size: 16px;
 }
 
-/* Highlight current website */
+.navbar a:hover {
+    background-color: darkslategrey;
+}
+
 .navbar a.active {
     background-color: seagreen;
 }
 
-/* Put navbar items on right side */
-.navbar .float-right {
-    float:right;
-}
-
-/* The dropdown container */
-.navbar .dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-/* The dropdown button */
-.dropdown .dropdown-button {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-/* Add a color on hovered navbar link */
-.navbar a:hover, .dropdown:hover .dropdown-button {
-    background-color: darkslategrey;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #F9F9F9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
+.center{
     float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #ddd;
+.navbar .right {
+    float: right;
 }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
+
+@media screen and (max-width: 600px) {
+    .navbar a, .navbar .right {
+        float: none;
+        display: block;
+    }
+
+    .navbar .center {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
 }
