@@ -77,3 +77,20 @@ body {
         transform: none;
     }
 }
+
+.container_row {
+    display: grid;
+}
+
+.layer1, .layer2{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.layer1 {
+    z-index: 1;
+}
+
+.layer2 {
+    z-index: 2;
+}
