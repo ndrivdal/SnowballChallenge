@@ -128,3 +128,15 @@ body {
 .logo img {
     max-width: 100%;
 }
+
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+    .logo img {
+        content:url("../logo/logo-kompakt@0,5x.png");
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo img{
+        content:url("../logo/logo-kompakt@0,25x.png");
+    }
+}
