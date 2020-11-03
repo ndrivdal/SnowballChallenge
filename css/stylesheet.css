@@ -16,9 +16,9 @@ body {
     overflow: hidden;
 
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: end;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 3;
     z-index: 1;
 }
 
@@ -27,7 +27,6 @@ body {
     color: darkslategrey;
     text-align: center;
     padding: 14px 16px;
-    margin-top: 10px;
     text-decoration: none;
     font-family: 'Karla', sans-serif;
     font-size: 24px;
@@ -80,40 +79,46 @@ body {
     }
 }
 
+
 .container {
     display: grid;
     grid-template-columns: 5% 10% auto;
-    grid-template-rows: 10% 15% auto;
+    grid-template-rows: 20px 10% 15% auto;
 }
+
+@media screen and (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 10% 10% auto;
+        grid-template-rows: 5% 90px 15% auto;
+    }
+}
+
 
 .backgroundImage {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: end;
     grid-row-start: 1;
     grid-row-end: 4;
+
+    min-height: 100vh;
 }
 
 @media screen and (max-width: 600px) {
     .backgroundImage {
         background-image: url("../background/background@0,25x.png");
-
-        min-height: 100vh;
     }
 }
 
 @media screen and (max-width: 1000px) and (min-width: 600px) {
     .backgroundImage {
         background-image: url("../background/background@0,5x.png");
-
-        min-height: 100vh;
     }
 }
 
 @media screen and (min-width: 1000px) {
     .backgroundImage {
         background-image: url("../background/background.png");
-
-        min-height: 100vh;
     }
 }
 
@@ -136,6 +141,11 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+    .logo {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
     .logo img{
         content:url("../logo/logo-kompakt@0,25x.png");
     }
