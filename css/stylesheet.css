@@ -82,15 +82,15 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 5% 10% auto;
-    grid-template-rows: 20px 10% 15% auto;
+    grid-template-columns: 5% 10% 20% 30% 20% 10% 5%;
+    grid-template-rows: 20px 10% 15% 40% auto;
 }
 
 @media screen and (max-width: 600px) {
     .container {
         display: grid;
-        grid-template-columns: 10% 10% auto;
-        grid-template-rows: 5% 90px 15% auto;
+        grid-template-columns: 10% 10% auto 10% 10%;
+        grid-template-rows: 5% 90px 15% 40% auto;
     }
 }
 
@@ -149,4 +149,14 @@ body {
     .logo img{
         content:url("../logo/logo-kompakt@0,25x.png");
     }
+}
+
+.definition {
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: center;
 }
