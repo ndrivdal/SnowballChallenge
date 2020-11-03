@@ -3,16 +3,37 @@ body {
 }
 
 .backgroundImage {
-    background-image: url("../Greenhouse (cannabis).jpg");
-
-    min-height: 100vh;
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
     position: relative;
 }
+
+@media screen and (max-width: 600px) {
+    .backgroundImage {
+        background-image: url("../background/background@0,25x.png");
+
+        min-height: 100vh;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+    .backgroundImage {
+        background-image: url("../background/background@0,5x.png");
+
+        min-height: 100vh;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .backgroundImage {
+        background-image: url("../background/background.png");
+
+        min-height: 100vh;
+    }
+}
+
 
 .navbar {
     position: relative;
