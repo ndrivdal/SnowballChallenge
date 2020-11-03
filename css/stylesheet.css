@@ -1,17 +1,28 @@
 body {
     margin: 0px;
-    background-image: ;
+}
+
+.backgroundImage {
+    background-image: url("../Greenhouse (cannabis).jpg");
+
+    min-height: 100vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
 }
 
 .navbar {
     position: relative;
-    background-color: #333333;
+    background-color: transparent;
     overflow: hidden;
 }
 
 .navbar a {
     float: left;
-    color: #f2f2f2;
+    color: darkslategrey;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
