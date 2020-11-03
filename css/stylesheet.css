@@ -94,3 +94,17 @@ body {
 .layer2 {
     z-index: 2;
 }
+
+.logo{
+    background-image: url("../logo/logo@0,5x.png");
+    background-repeat: no-repeat;
+    background-size: 200px;
+}
+
+@media screen and (max-width: 600px) {
+    .logo{
+        background-image: url("../logo/logo@0,25x.png");
+        background-repeat: no-repeat;
+        background-size: 100px;
+    }
+}
