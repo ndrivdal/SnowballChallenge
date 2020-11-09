@@ -81,10 +81,11 @@ body {
 }
 
 
-.container {
+.containerFullScreen {
     display: grid;
     grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
     grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    height: 100vh;
 }
 
 
@@ -225,11 +226,17 @@ body {
 
 }
 
+.containerSmall {
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 10% 10% 10%;
+    height: 30vh;
+}
+
 .partner {
     background-color: aquamarine;
     grid-column-start: 1;
     grid-column-end: end;
-    grid-row-start: 8;
-    grid-row-end: 10;
-    padding: 30px;
+    grid-row-start: 1;
+    grid-row-end: end;
 }
