@@ -245,6 +245,6 @@ body {
 
 .partnerImage {
     height: 15vh;
-    padding-left: 50px;
-    padding-rigt: 50px;
+    margin-left: 50px;
+    margin-rigt: 50px;
 }
