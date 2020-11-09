@@ -224,3 +224,12 @@ body {
     grid-row-end: 5;
 
 }
+
+.partner {
+    background-color: aquamarine;
+    grid-column-start: 1;
+    grid-column-end: end;
+    grid-row-start: 8;
+    grid-row-end: 10;
+    padding: 30px;
+}
