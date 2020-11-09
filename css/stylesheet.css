@@ -82,16 +82,8 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 5% 10% 20% 30% 20% 10% 5%;
-    grid-template-rows: 20px 10% 15% 40% auto;
-}
-
-@media screen and (max-width: 600px) {
-    .container {
-        display: grid;
-        grid-template-columns: 10% 10% auto 10% 10%;
-        grid-template-rows: 5% 90px 15% 40% auto;
-    }
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
 }
 
 
