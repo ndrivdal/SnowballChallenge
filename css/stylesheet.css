@@ -14,6 +14,7 @@ body {
     position: relative;
     background-color: transparent;
     overflow: hidden;
+    align-self: start;
 
     grid-column-start: 1;
     grid-column-end: end;
@@ -115,56 +116,105 @@ body {
 }
 
 .logo {
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
     z-index: 1;
+    justify-self: center;
 }
 
 .logo img {
-    max-width: 100%;
+    max-width: 50%;
+    margin: 40px;
 }
 
-@media screen and (max-width: 1000px) and (min-width: 600px) {
+@media screen and (max-width: 1050px) and (min-width: 600px) {
     .logo img {
         content:url("../logo/logo-kompakt@0,5x.png");
     }
 }
 
 @media screen and (max-width: 600px) {
-    .logo {
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-
     .logo img{
         content:url("../logo/logo-kompakt@0,25x.png");
     }
 }
 .definition {
     background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
     z-index: 1;
     grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 6;
     text-align: center;
+    align-self: center;
 }
+
+
+
+@media screen and (max-height: 360px){
+    .definition {
+        grid-column-start: 1;
+        grid-column-end: end;
+        border-radius: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .definition {
+        grid-column-start: 1;
+        grid-column-end: end;
+        border-radius: 0px;
+    }
+}
+
+
+
 .our_solution {
     background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
     z-index: 1;
     grid-column-start: 4;
-    grid-column-end: 5;
+    grid-column-end: 8;
     grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-end: 7;
     text-align: center;
+    align-self: center;
 }
+
+@media screen and (max-width: 1050px) and (min-width: 600px) {
+    .our_solution {
+        grid-column-start: 2;
+        grid-column-end: 10;
+    }
+}
+
+@media screen and (max-height: 460px){
+    .our_solution {
+        grid-column-start: 1;
+        grid-column-end: end;
+        grid-row-end: end;
+        border-radius: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .our_solution {
+        grid-column-start: 1;
+        grid-column-end: end;
+        border-radius: 0px;
+    }
+}
+
+
 
 .our_solution p {
     text-align: left;
     margin-left: 10px;
 }
+
 .illustration {
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 1;
