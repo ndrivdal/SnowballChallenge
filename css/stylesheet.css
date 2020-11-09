@@ -98,13 +98,7 @@ body {
     min-height: 100vh;
 }
 
-@media screen and (max-width: 600px) {
-    .backgroundImage {
-        background-image: url("../background/background@0,25x.jpg");
-    }
-}
-
-@media screen and (max-width: 1000px) and (min-width: 600px) {
+@media screen and (max-width: 1000px) {
     .backgroundImage {
         background-image: url("../background/background@0,5x.jpg");
     }
