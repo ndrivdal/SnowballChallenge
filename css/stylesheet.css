@@ -6,7 +6,7 @@ body {
 
 .navbar {
     position: relative;
-    background-color: transparent;
+    background-color: #bdd0c4;
     overflow: hidden;
     align-self: start;
 }
