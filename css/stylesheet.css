@@ -139,8 +139,8 @@ body {
     z-index: 1;
     grid-column-start: 4;
     grid-column-end: 8;
-    grid-row-start: 3;
-    grid-row-end: 6;
+    grid-row-start: 1;
+    grid-row-end: end;
     text-align: center;
     align-self: center;
     font-size: 1.2em;
@@ -172,8 +172,8 @@ body {
     z-index: 1;
     grid-column-start: 4;
     grid-column-end: 8;
-    grid-row-start: 3;
-    grid-row-end: 6;
+    grid-row-start: 1;
+    grid-row-end: end;
     text-align: center;
     align-self: center;
     font-size: 1.2em;
@@ -186,12 +186,10 @@ body {
     }
 }
 
-@media screen and (max-height: 460px){
+@media screen and (max-height: 600px){
     .our_solution {
         grid-column-start: 1;
         grid-column-end: end;
-        grid-row-start: 1;
-        grid-row-end: end;
         border-radius: 0;
     }
 }
