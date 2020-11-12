@@ -75,12 +75,14 @@ body {
     width: 200px;
     margin-left: 25px;
     padding: 14px 16px;
+    transform: translate(0, 5px);
 }
 
 @media screen and (max-width: 1050px) and (min-width: 600px) {
     .logo img {
         content:url("../logo/logo-kompakt@0,5x.png");
         width: 50px;
+        transform: translate(0, 0);
     }
 }
 
