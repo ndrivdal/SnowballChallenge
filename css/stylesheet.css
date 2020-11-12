@@ -96,18 +96,11 @@ body {
     }
 }
 
-
-
-
-
-
-
-
 .containerFullScreen {
     display: grid;
     grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
     grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 
@@ -121,9 +114,9 @@ body {
     grid-column-start: 1;
     grid-column-end: end;
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: end;
 
-    height: 100vh;
+    height: 100%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -148,6 +141,7 @@ body {
     grid-row-end: 6;
     text-align: center;
     align-self: center;
+    font-size: 1.2em;
 }
 
 
@@ -180,6 +174,7 @@ body {
     grid-row-end: 6;
     text-align: center;
     align-self: center;
+    font-size: 1.2em;
 }
 
 @media screen and (max-width: 1050px) and (min-width: 600px) {
@@ -193,6 +188,7 @@ body {
     .our_solution {
         grid-column-start: 1;
         grid-column-end: end;
+        grid-row-start: 1;
         grid-row-end: end;
         border-radius: 0;
     }
@@ -203,6 +199,12 @@ body {
         grid-column-start: 1;
         grid-column-end: end;
         border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .our_solution {
+        font-size: 1em;
     }
 }
 
